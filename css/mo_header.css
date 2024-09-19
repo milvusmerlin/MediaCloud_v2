@@ -23,6 +23,7 @@ div.header{
         border: 1px solid #dddddd;
       }
       & img{
+        width:4.3556vw;
         position: absolute;
         right: 3.8222vw;
         top:50%;
@@ -31,8 +32,57 @@ div.header{
     }
     & div.user_box{
       width:7.6444vw;
-      & ul.user_list{
-        display: none;
+      aspect-ratio: 1;
+      position: relative;
+      & div.user_box_inner{
+        & img{
+          width:100%;
+        }
+        & ul.user_list{
+          display: none;
+          position: absolute;
+          width:26.6667vw;
+          z-index: 1;
+          background-color: #FFF;
+          right: 0px;
+          margin-top: 2.6667vw;
+          text-align: right;
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+          border-radius: 1.0667vw;
+          & li{
+            font-size: 3vw;
+            padding: 3.0222vw 7.4667vw;
+            box-sizing: border-box;
+            color:#a9b0bd;
+            &:first-child{
+              border-radius: 1.0667vw 1.0667vw 0px 0px;
+            }
+            &:last-child{
+              border-radius: 0px 0px 1.0667vw 1.0667vw;
+            }
+            &.active{
+              background-color: #e9ecf0;
+              color:#234169;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  & nav.gnb_wrap{
+    background-color: #6a84c2;
+    font-size: 3.7333vw;
+    padding: 3.1111vw 7.1111vw;
+    box-sizing: border-box;
+    color:#FFF;
+    & ul.gnb_list{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & li{
+
       }
     }
   }
