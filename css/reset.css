@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -85,12 +85,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
 }
 article,
 aside,
@@ -103,106 +103,106 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: "";
-    content: none;
+  content: "";
+  content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 select,
 textarea,
 input {
-    outline: none;
-    border: none;
-    color: #000000;
-    font-family: "Noto Sans KR", sans-serif, Arial;
-    font-size: 14px;
-    letter-spacing: -0.5px;
+  outline: none;
+  border: none;
+  color: #000000;
+  font-family: "Noto Sans KR", sans-serif, Arial;
+  font-size: 14px;
+  letter-spacing: -0.5px;
 }
 input::-ms-clear {
-    display: none;
+  display: none;
 }
 input::-webkit-input-placeholder {
-    color: #cccccc;
+  color: #cccccc;
 }
 input::-moz-placeholder {
-    color: #cccccc;
+  color: #cccccc;
 }
 input:-ms-input-placeholder {
-    color: #cccccc !important;
+  color: #cccccc !important;
 }
 textarea::-webkit-input-placeholder {
-    color: #cccccc;
+  color: #cccccc;
 }
 textarea::-moz-placeholder {
-    color: #cccccc;
+  color: #cccccc;
 }
 textarea:-ms-input-placeholder {
-    color: #cccccc;
+  color: #cccccc;
 }
 button {
-    display: block;
-    outline: none;
-    cursor: pointer;
-    background: none;
-    border: none;
+  display: block;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 .clear::after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 .blind {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
 }
 html {
-    width: 100%;
+  width: 100%;
 }
 body {
-    width: 100%;
-    min-width: 1643px;
-    height: 100%;
-    font-size: 16px;
-    color: #000000;
-    font-weight: 300;
-    overflow-x: auto;
+  width: 100%;
+  min-width: 1643px;
+  height: 100%;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 300;
+  overflow-x: auto;
 }
 :lang(en) {
-    font-family: "ITCAvantGardeGothicStd", Arial, sans-serif;
-    font-weight: 600;
+  font-family: "ITCAvantGardeGothicStd", Arial, sans-serif;
+  font-weight: 600;
 }
 :lang(ko) {
-    font-family: "Noto Sans KR", sans-serif, Arial;
+  font-family: "Noto Sans KR", sans-serif, Arial;
 }
