@@ -1,0 +1,39 @@
+div.header{
+  & div.logo_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw 4.2667vw;
+    & h1.logo{
+      width:23.7333vw;
+      & a{
+        width: 100%;
+        & img{
+          width: 100%;              
+        }
+      }
+    }
+    & div.search_box{
+      position: relative;
+      & input{
+        width:40.9778vw;
+        padding: 2.9333vw;
+        border-radius: 4.4444vw;
+        box-sizing: border-box;
+        border: 1px solid #dddddd;
+      }
+      & img{
+        position: absolute;
+        right: 3.8222vw;
+        top:50%;
+        transform: translateY(-50%);
+      }
+    }
+    & div.user_box{
+      width:7.6444vw;
+      & ul.user_list{
+        display: none;
+      }
+    }
+  }
+}
