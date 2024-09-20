@@ -34,6 +34,25 @@
   display: flex;
   gap: 33px;
 }
+.header .top .right_ico > ul > li {
+  position: relative;
+}
+.header .top .right_ico > ul > li:nth-child(3):after {
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "1";
+  background-image: url(../image/Ellipse2.png);
+  background-size: 17px 17px;
+  top: -6px;
+  right: 5px;
+  width: 17px;
+  height: 17px;
+  z-index: 9999;
+}
 .header .top .right_ico > ul > li a {
   display: flex;
   flex-direction: column;
@@ -41,20 +60,12 @@
   align-items: center;
   justify-content: space-between;
 }
+.header .top .right_ico > ul > li a img {
+  display: block;
+}
 .header .top .right_ico > ul > li a img.cart {
   position: relative;
   width: 28px;
-}
-.header .top .right_ico > ul > li a img.cart::after {
-  position: absolute;
-  content: "";
-  background-color: red;
-  background-size: 17px 17px;
-  top: -7px;
-  right: -7px;
-  width: 17px;
-  height: 17px;
-  z-index: 5;
 }
 .header .top .right_ico > ul > li a span {
   font-size: 12.9px;
@@ -62,14 +73,20 @@
   color: #234169;
   white-space: nowrap;
 }
+.header .top .right_ico > ul > li.user_ab {
+  margin-left: 10px;
+}
 .header .top .right_ico > ul > li.user_ab a {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 .header .top .right_ico > ul > li.user_ab a ul {
+  position: absolute;
   display: flex;
   flex-direction: column;
+  top: 44px;
+  display: none;
 }
 .header .top .right_ico > ul > li.user_ab a ul li {
   width: 100px;
@@ -78,19 +95,27 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  color: #e9ecf0;
+  color: #d3d9e1;
   font-size: 14px;
   overflow: hidden;
+  font-weight: 700;
 }
-.header .top .right_ico > ul > li.user_ab a ul li.on {
+.header .top .right_ico > ul > li.user_ab a ul li:nth-child(1).active {
   background-color: #e9ecf0;
   color: #234169;
+}
+.header .top .right_ico > ul > li.user_ab a ul li:nth-child(2).active {
+  background-color: #e6e1de;
+  color: #84685a;
 }
 .header .top .right_ico > ul > li.user_ab a ul li:nth-child(1) {
   border-radius: 3px 3px 0 0;
 }
 .header .top .right_ico > ul > li.user_ab a ul li:nth-child(2) {
   border-radius: 0 0 3px 3px;
+}
+.header .top .right_ico > ul > li.user_ab.user_ab:hover ul {
+  display: block;
 }
 .header .bottom {
   width: 100%;
@@ -112,6 +137,9 @@
   font-size: 17px;
   font-weight: 500;
   color: white;
+}
+.header .bottom .gnb li a span:lang(en) {
+  font-weight: 700;
 }
 .header .bottom .gnb li.category a {
   gap: 10px;

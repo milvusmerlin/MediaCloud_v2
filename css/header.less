@@ -42,6 +42,27 @@
                 gap: 33px;
 
                 &>li {
+                    position: relative;
+
+                    &:nth-child(3):after {
+                        position: absolute;
+                        color: white;
+                        font-size: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        content: "1";
+                        background-image: url(../image/Ellipse2.png);
+                        // background-color: red;
+                        background-size: 17px 17px;
+                        // background-position: right -7px top -6px;
+                        top: -6px;
+                        right: 5px;
+                        width: 17px;
+                        height: 17px;
+                        z-index: 9999;
+                    }
+
                     a {
                         display: flex;
                         flex-direction: column;
@@ -51,6 +72,7 @@
                         // position: relative;
 
                         img {
+                            display: block;
                             // &.login {
                             //     width: 26px;
                             // }
@@ -63,19 +85,19 @@
                                 position: relative;
                                 width: 28px;
 
-                                &::after {
-                                    position: absolute;
-                                    content: "";
-                                    // background-image: url(../image/Ellipse2.png);
-                                    background-color: red;
-                                    background-size: 17px 17px;
-                                    // background-position: right -7px top -6px;
-                                    top: -7px;
-                                    right: -7px;
-                                    width: 17px;
-                                    height: 17px;
-                                    z-index: 5;
-                                }
+                                // &::after {
+                                //     position: absolute;
+                                //     content: "";
+                                //     background-image: url(../image/Ellipse2.png);
+                                //     // background-color: red;
+                                //     background-size: 17px 17px;
+                                //     // background-position: right -7px top -6px;
+                                //     top: -7px;
+                                //     right: -7px;
+                                //     width: 17px;
+                                //     height: 17px;
+                                //     z-index: 9999;
+                                // }
                             }
 
 
@@ -96,6 +118,8 @@
 
 
                     &.user_ab {
+                        margin-left: 10px;
+
                         a {
                             display: flex;
                             flex-direction: column;
@@ -103,8 +127,11 @@
 
 
                             ul {
+                                position: absolute;
                                 display: flex;
                                 flex-direction: column;
+                                top: 44px;
+                                display: none;
 
                                 li {
                                     width: 100px;
@@ -113,14 +140,20 @@
                                     align-items: center;
                                     justify-content: center;
                                     background-color: white;
-                                    color: #e9ecf0;
+                                    color: #d3d9e1;
                                     font-size: 14px;
                                     overflow: hidden;
+                                    font-weight: 700;
 
 
-                                    &.on {
+                                    &:nth-child(1).active {
                                         background-color: #e9ecf0;
                                         color: #234169;
+                                    }
+
+                                    &:nth-child(2).active {
+                                        background-color: #e6e1de;
+                                        color: #84685a;
                                     }
 
                                     &:nth-child(1) {
@@ -133,8 +166,13 @@
                                 }
                             }
                         }
-                    }
 
+                        &.user_ab:hover {
+                            ul {
+                                display: block;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -162,6 +200,10 @@
                         font-size: 17px;
                         font-weight: 500;
                         color: white;
+
+                        &:lang(en) {
+                            font-weight: 700;
+                        }
                     }
                 }
 

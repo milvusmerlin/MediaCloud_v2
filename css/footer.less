@@ -1,0 +1,113 @@
+.footer {
+    background-color: #f2f2f2;
+
+    .footer_inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 64px;
+        padding-bottom: 66px;
+
+        .footer_left {
+            display: flex;
+            flex-direction: column;
+            gap: 38px;
+
+            .footer_menu {
+                display: flex;
+                flex-direction: row;
+                height: 27px;
+                gap: 41px;
+                align-items: center;
+
+                li {
+                    a {
+                        font-size: 15px;
+                        font-weight: 500;
+                        letter-spacing: -0.05em;
+                    }
+                }
+            }
+
+            .milvus_info {
+                p {
+                    font-size: 14px;
+                    color: #777777;
+
+                    span {
+                        color: #cccccc;
+                    }
+
+                    &:nth-child(2) {
+                        padding-top: 14px;
+                    }
+
+                    &:nth-child(3) {
+                        padding-top: 16px;
+                    }
+
+                    &:nth-child(4) {
+                        padding-top: 24px;
+                    }
+                }
+            }
+        }
+
+        .footer_right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+
+
+            p {
+                font-size: 13px;
+                font-weight: 500;
+                color: #666666;
+
+                &.number {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    align-items: center;
+
+                    .customer {
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #666666;
+                    }
+
+                    .number {
+                        font-size: 36px;
+                        font-weight: 700;
+                        color: #234169;
+                    }
+                }
+
+                &:nth-child(2) {
+                    padding-top: 24px;
+
+                }
+
+                &:nth-child(3) {
+                    padding-top: 13px;
+
+                }
+
+                &:nth-child(4) {
+                    padding-top: 12px;
+
+                }
+            }
+
+            .sns_ico {
+                padding-top: 36px;
+                display: flex;
+                flex-direction: row;
+                gap: 27px;
+            }
+
+        }
+    }
+
+}

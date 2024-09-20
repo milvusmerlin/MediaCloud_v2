@@ -1,5 +1,10 @@
 body {
   display: block;
+  width: 100%;
+}
+body .inner {
+  width: 1426px;
+  margin: 0 auto;
 }
 body .container .mid_ico_wrap {
   width: 100%;
@@ -32,4 +37,131 @@ body .container .mid_ico_wrap ul li a span {
   font-size: 14px;
   font-weight: 500;
   color: #234169;
+}
+body .container .best_prd_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+body .container .best_prd_wrap h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #234169;
+}
+body .container .best_prd_wrap .prd_list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+body .container .best_prd_wrap .prd_list .best_prd a {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+body .container .best_prd_wrap .prd_list .best_prd a .txt {
+  display: flex;
+  flex-direction: column;
+}
+body .container .best_prd_wrap .prd_list .best_prd a .txt .prd_brand {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+  letter-spacing: -0.05em;
+}
+body .container .best_prd_wrap .prd_list .best_prd a .txt .prd_name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+  padding-top: 6px;
+  letter-spacing: -0.05em;
+}
+body .container .best_prd_wrap .prd_list .best_prd a .txt .prd_price {
+  display: flex;
+  flex-direction: row;
+  padding-top: 11px;
+  gap: 10px;
+  align-items: center;
+}
+body .container .best_prd_wrap .prd_list .best_prd a .txt .prd_price span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999999;
+  text-decoration: line-through;
+}
+body .container .best_prd_wrap .prd_list .best_prd a .txt .prd_price span:nth-child(2) {
+  font-size: 20px;
+  font-weight: 700;
+  color: #234169;
+}
+body .container .best_prd_wrap .prd_list .best_prd a .txt .prd_price span:nth-child(3) {
+  font-size: 20px;
+  font-weight: 700;
+  color: #6a84c2;
+}
+body .container .best_prd_wrap .slide2_btn {
+  cursor: pointer;
+}
+body .container .best_prd_wrap .slide2_btn img:nth-child(1) {
+  position: absolute;
+  left: -82px;
+  top: 206px;
+}
+body .container .best_prd_wrap .slide2_btn img:nth-child(2) {
+  position: absolute;
+  left: 1486px;
+  top: 206px;
+}
+body .container .ddi_banner {
+  padding-top: 83px;
+  padding-bottom: 116px;
+}
+body .container .ddi_banner a {
+  width: 1426px;
+  height: 146px;
+  display: block;
+  position: relative;
+}
+body .container .ddi_banner a img {
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  background-color: #edf0f8;
+  border: 1px solid #6a84c2;
+  border-radius: 5px;
+  z-index: -1;
+  padding: 16px;
+}
+body .aside {
+  position: fixed;
+  right: 40px;
+  top: 600px;
+  z-index: 999;
+}
+body .aside .recent_prd {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+body .aside .recent_prd span {
+  width: 96px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  border-bottom: 1px solid #dddddd;
+}
+body .aside .recent_prd .recent_prd_bg {
+  width: 96px;
+  height: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
 }
