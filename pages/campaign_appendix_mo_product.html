@@ -1,163 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/mo_reset.css" />
-    <link rel="stylesheet" href="../css/mo_common.css" />
-    <link rel="stylesheet" href="../css/mo_header.css" />
-    <link rel="stylesheet" href="../css/mo_menu.css" />
-    <link rel="stylesheet" href="../css/mo_detail.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="../js/mo_detail.js"></script>
-    <title>MO 상세페이지</title>
-  </head>
 
-  <body>
-    <div class="wrap">
-      <div class="header">
-        <div class="logo_wrap">
-          <h1 class="logo">
-            <a href="../pages/campaign_appendix_mo_home.html">
-              <img src="../image/mo/all/logo.png" alt="로고" />
-            </a>
-          </h1>
-          <div class="search_box">
-            <input type="text" class="search" />
-            <img src="../image/mo/all/search_icon.png" alt="검색 아이콘" />
-          </div>
-          <div class="prd_user_box">
-            <div class="prd_user_box_inner">
-              <img src="../image/mo/all/user_icon.png" alt="유저 아이콘" />
-              <ul class="prd_user_list">
-                <li class="active">사용자 A</li>
-                <li>사용자 B</li>
-              </ul>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/mo_reset.css" />
+  <link rel="stylesheet" href="../css/mo_common.css" />
+  <link rel="stylesheet" href="../css/mo_header.css" />
+  <link rel="stylesheet" href="../css/mo_menu.css" />
+  <link rel="stylesheet" href="../css/mo_detail.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="../js/mo_detail.js"></script>
+  <title>MO 상세페이지</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="logo_wrap">
+        <h1 class="logo">
+          <a href="../pages/campaign_appendix_mo_home.html">
+            <img src="../image/mo/all/logo.png" alt="로고" />
+          </a>
+        </h1>
+        <div class="search_box">
+          <input type="text" class="search" />
+          <img src="../image/mo/all/search_icon.png" alt="검색 아이콘" />
         </div>
-        <nav class="gnb_wrap">
-          <ul class="gnb_list">
-            <li>홈</li>
-            <li>신상품</li>
-            <li>Only</li>
-            <li>명품관</li>
-            <li>브랜드</li>
-          </ul>
-        </nav>
-      </div>
-      <div class="prd_main_wrap">
-        <div class="prd_main_visual_wrap swiper mySwiper">
-          <div class="prd_visual_arrow_back">
-            <a href="#;">
-              <img src="../image/mo/detail/mo_arrow.png" alt="뒤로가기 버튼" />
-            </a>
+        <div class="prd_user_box">
+          <div class="prd_user_box_inner">
+            <img src="../image/mo/all/user_01.png" alt="유저 아이콘" />
+            <ul class="prd_user_list">
+              <li class="active_a">사용자 A</li>
+              <li>사용자 B</li>
+            </ul>
           </div>
-          <div class="prd_visual_image swiper-wrapper">
-            <img class="swiper-slide" src="../image/mo/detail/detail_visual_01.png" alt="비쥬얼 이미지" />
-            <img class="swiper-slide" src="../image/mo/detail/detail_visual_02.png" alt="비쥬얼 이미지" />
-            <img class="swiper-slide" src="../image/mo/detail/detail_visual_03.png" alt="비쥬얼 이미지" />
-            <img class="swiper-slide" src="../image/mo/detail/detail_visual_04.png" alt="비쥬얼 이미지" />
-          </div>
-          <div class="prd_visual_carousel_wrap">
-            <div class="prd_visual_carousel swiper-pagination">
-              <span class="prd_visual_carousel_before">01</span>
-              <span>/</span>
-              <span class="prd_visual_carousel_after">04</span>
-            </div>
-          </div>
-        </div>
-        <div class="prd_main_info_wrap">
-          <p class="prd_main_info_brand">
-            Siyazu
-            <a href="#;"> ></a>
-          </p>
-          <p class="prd_main_info_name">SIKN2021 Cashmere brend short knit_Pink</p>
-          <span class="prd_main_info_price"> 69,000 </span>
-          <div class="prd_main_info_price_detail">
-            <div class="prd_main_info_price_detail_box">
-              <span class="prd_main_info_price_detail_sale">14%</span>
-              <span class="prd_main_info_price_detail_price">58,995원</span>
-            </div>
-            <button class="prd_main_info_price_detail_coupon">쿠폰받기</button>
-          </div>
-          <div class="prd_main_info_ad">
-            <a href="javascript:void(0);">
-              <img src="../image/mo/detail/ad_banner.png" alt="광고배너" />
-              <div class="prd_main_info_ad_text">
-                <p>르마르크 추석 빅세일</p>
-                <span>선물 빅세일 최대 80% 할인</span>
-              </div>
-            </a>
-          </div>
-          <div class="prd_main_info_scope_wrap">
-            <div class="prd_main_info_scope_star">
-              <img src="../image/mo/detail/star_03.jpg" alt="별점" />
-            </div>
-            <span class="prd_main_info_scope_avg">4.8</span>
-            <span class="prd_main_info_scope_review"> 26개 리뷰 </span>
-          </div>
-        </div>
-        <div class="prd_main_detail_wrap">
-          <ul class="prd_main_detail_list">
-            <li>
-              <span> 카드혜택가 </span>
-              <p style="font-weight: bold; font-size: 3.7333vw">52,440원 ~</p>
-            </li>
-            <li>
-              <span> 무이자할부 </span>
-              <p style="text-decoration: underline; font-weight: 600">카드사별 무이자 혜택</p>
-            </li>
-            <li>
-              <span> 사은품 </span>
-              <p>
-                <span style="font-weight: bold">스타벅스 기프티콘</span>
-                <span>2024.08.07 ~ 2026.10.28 / 12시 12분</span>
-                <span>사은품 소진시, 조기 종료될 수 있습니다.</span>
-              </p>
-            </li>
-            <li>
-              <span> 배송정보 </span>
-              <p>
-                <span>택배배송CJ대한통운</span>
-                <span>9/13 도착 예정</span>
-                <span>배송비 무료</span>
-                <span>제주 4,000원,도서산간 4,000원 추가</span>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="prd_main_nav_wrap">
-          <ul class="prd_main_nav_list">
-            <li class="active">상세정보</li>
-            <li>리뷰 (58)</li>
-            <li>Q&A (22)</li>
-            <li>안내사항</li>
-          </ul>
-        </div>
-        <div class="prd_main_prd_detail_wrap">
-          <img src="../image/mo/detail/product_detail.png" alt="상품상세페이지" />
         </div>
       </div>
-      <div class="prd_menu_btn_wrap">
-        <ul class="prd_menu_btn_list">
-          <li class="prd_menu_btn_heart">
-            <img src="../image/mo/detail/heart.png" alt="찜상품" />
-            <span>찜상품</span>
-          </li>
-          <li class="prd_menu_btn_present">
-            <img src="../image/mo//detail/present.png" alt="선물" />
-            <span>선물</span>
+      <nav class="gnb_wrap">
+        <ul class="gnb_list">
+          <li>홈</li>
+          <li>신상품</li>
+          <li>Only</li>
+          <li>명품관</li>
+          <li>브랜드</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="prd_main_wrap">
+      <div class="prd_main_visual_wrap swiper mySwiper">
+        <div class="prd_visual_arrow_back">
+          <a href="../pages/campaign_appendix_mo_home.html">
+            <img src="../image/mo/detail/mo_arrow.png" alt="뒤로가기 버튼" />
+          </a>
+        </div>
+        <div class="prd_visual_image swiper-wrapper">
+          <img class="swiper-slide" src="../image/mo/detail/detail_visual_01.png" alt="비쥬얼 이미지" />
+          <img class="swiper-slide" src="../image/mo/detail/detail_visual_02.png" alt="비쥬얼 이미지" />
+          <img class="swiper-slide" src="../image/mo/detail/detail_visual_03.png" alt="비쥬얼 이미지" />
+          <img class="swiper-slide" src="../image/mo/detail/detail_visual_04.png" alt="비쥬얼 이미지" />
+        </div>
+        <div class="prd_visual_carousel_wrap">
+          <div class="prd_visual_carousel swiper-pagination">
+            <span class="prd_visual_carousel_before">01</span>
+            <span>/</span>
+            <span class="prd_visual_carousel_after">04</span>
+          </div>
+        </div>
+      </div>
+      <div class="prd_main_info_wrap">
+        <p class="prd_main_info_brand">
+          Siyazu
+          <a href="#;"> ></a>
+        </p>
+        <p class="prd_main_info_name">SIKN2021 Cashmere brend short knit_Pink</p>
+        <span class="prd_main_info_price"> 69,000 </span>
+        <div class="prd_main_info_price_detail">
+          <div class="prd_main_info_price_detail_box">
+            <span class="prd_main_info_price_detail_sale">14%</span>
+            <span class="prd_main_info_price_detail_price">58,995원</span>
+          </div>
+          <button class="prd_main_info_price_detail_coupon">쿠폰받기</button>
+        </div>
+        <div class="prd_main_info_ad">
+          <a href="javascript:void(0);">
+            <img src="../image/mo/detail/ad_banner.png" alt="광고배너" />
+            <div class="prd_main_info_ad_text">
+              <p>르마르크 추석 빅세일</p>
+              <span>선물 빅세일 최대 80% 할인</span>
+            </div>
+          </a>
+        </div>
+        <div class="prd_main_info_scope_wrap">
+          <div class="prd_main_info_scope_star">
+            <img src="../image/mo/detail/star_03.jpg" alt="별점" />
+          </div>
+          <span class="prd_main_info_scope_avg">4.8</span>
+          <span class="prd_main_info_scope_review"> 26개 리뷰 </span>
+        </div>
+      </div>
+      <div class="prd_main_detail_wrap">
+        <ul class="prd_main_detail_list">
+          <li>
+            <span> 카드혜택가 </span>
+            <p style="font-weight: bold; font-size: 3.7333vw">52,440원 ~</p>
           </li>
           <li>
-            <button>구매하기</button>
+            <span> 무이자할부 </span>
+            <p style="text-decoration: underline; font-weight: 600">카드사별 무이자 혜택</p>
+          </li>
+          <li>
+            <span> 사은품 </span>
+            <p>
+              <span style="font-weight: bold">스타벅스 기프티콘</span>
+              <span>2024.08.07 ~ 2026.10.28 / 12시 12분</span>
+              <span>사은품 소진시, 조기 종료될 수 있습니다.</span>
+            </p>
+          </li>
+          <li>
+            <span> 배송정보 </span>
+            <p>
+              <span>택배배송CJ대한통운</span>
+              <span>9/13 도착 예정</span>
+              <span>배송비 무료</span>
+              <span>제주 4,000원,도서산간 4,000원 추가</span>
+            </p>
           </li>
         </ul>
       </div>
+      <div class="prd_main_nav_wrap">
+        <ul class="prd_main_nav_list">
+          <li class="active">상세정보</li>
+          <li>리뷰 (58)</li>
+          <li>Q&A (22)</li>
+          <li>안내사항</li>
+        </ul>
+      </div>
+      <div class="prd_main_prd_detail_wrap">
+        <img src="../image/mo/detail/product_detail.png" alt="상품상세페이지" />
+      </div>
     </div>
-  </body>
+    <div class="prd_menu_btn_wrap">
+      <ul class="prd_menu_btn_list">
+        <li class="prd_menu_btn_heart">
+          <img src="../image/mo/detail/heart.png" alt="찜상품" />
+          <span>찜상품</span>
+        </li>
+        <li class="prd_menu_btn_present">
+          <img src="../image/mo//detail/present.png" alt="선물" />
+          <span>선물</span>
+        </li>
+        <li>
+          <button>구매하기</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
 </html>

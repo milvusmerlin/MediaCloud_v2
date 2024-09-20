@@ -60,9 +60,14 @@ div.header{
             &:last-child{
               border-radius: 0px 0px 1.0667vw 1.0667vw;
             }
-            &.active{
+            &.active_a{
               background-color: #e9ecf0;
               color:#234169;
+              font-weight: bold;
+            }
+            &.active_b{
+              background-color: #e0d9d6;
+              color:#84685a;
               font-weight: bold;
             }
           }
@@ -100,8 +105,13 @@ div.header{
             &:last-child{
               border-radius: 0px 0px 1.0667vw 1.0667vw;
             }
-            &.active{
-              background-color: #e6e1de;
+            &.active_a{
+              background-color: #e9ecf0;
+              color:#234169;
+              font-weight: bold;
+            }
+            &.active_b{
+              background-color: #e0d9d6;
               color:#84685a;
               font-weight: bold;
             }

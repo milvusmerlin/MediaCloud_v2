@@ -13,6 +13,10 @@ const user = {
   userName: "사용자 A"
 };
 
+const giftBanner = document.querySelector(".contents_banner");
+
+
+
 
 userBtn.addEventListener("click", (e) => {
 
@@ -26,12 +30,9 @@ userBtn.addEventListener("click", (e) => {
 
 });
 
-console.log("dd");
-
 userList.addEventListener("mouseleave", (e) => {
 
   userList.style.display = "none";
-
 
 });
 
@@ -43,27 +44,37 @@ userLi.forEach((node, idx) => {
 
     userLi.forEach((nd, i) => {
 
-      nd.classList.remove("active");
+      nd.classList.remove("active_a");
+      nd.classList.remove("active_b");
 
     });
 
-    e.target.classList.add("active");
 
     if (e.target.innerText === "사용자 A") {
       user.userName = "사용자 A";
+      e.target.classList.add("active_a");
+      giftBanner.style.background = "#ecf0f7";
+      giftBanner.style.border = "1px solid #6a84c2";
     } else {
       user.userName = "사용자 B";
+      e.target.classList.add("active_b");
+      giftBanner.style.background = "#e3ddd9";
+      giftBanner.style.border = "1px solid #84685a";
     }
 
     if (user.userName === "사용자 A") {
-      banner.src = "../image/mo/main/banner_bottom.png"
+      banner.src = "../image/mo/main/banner_bottom.png";
+      userBtn.src = "../image/mo/all/user_01.png";
     } else {
       banner.src = "../image/mo/main/banner_bottom_02.png"
+      userBtn.src = "../image/mo/all/user_icon.png";
     }
 
   });
 
 });
+
+
 
 
 

@@ -1,9 +1,12 @@
 div.prd_main_wrap{
   div.prd_main_visual_wrap{
-    background-color: #eeeeee;
-    padding: 3.5556vw;
     box-sizing: border-box;
+    position: relative;
     div.prd_visual_arrow_back{
+      position: absolute;
+      z-index: 10;
+      left: 15px;
+      top:15px;
       width:5.0667vw;
       a{
         img{
@@ -13,12 +16,8 @@ div.prd_main_wrap{
     }
     div.prd_visual_image{
       width:100%;
-      padding-top: 6.4889vw;
-      padding-bottom: 9.0667vw;
       img{
         display: block;
-        width:70.9333vw;
-        padding: 16.6667vw 14.6667vw;
         box-sizing: border-box;
         aspect-ratio: 0.944;
         margin: 0 auto;
@@ -95,9 +94,9 @@ div.prd_main_wrap{
       }
     }
     div.prd_main_info_ad{
-      border: 1px solid #84685a;
+      border: 1px solid #6a84c2;
       box-sizing: border-box;
-      background-color: #e3ddd9;
+      background-color: #ecf0f7;
       padding: 1.7778vw;
       position: relative;
       margin-bottom: 6.0444vw;
