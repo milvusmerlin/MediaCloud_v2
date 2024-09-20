@@ -70,6 +70,46 @@ div.header{
       }
 
     }
+    & div.prd_user_box{
+      width:7.6444vw;
+      aspect-ratio: 1;
+      position: relative;
+      & div.prd_user_box_inner{
+        & img{
+          width:100%;
+        }
+        & ul.prd_user_list{
+          display: none;
+          position: absolute;
+          width:26.6667vw;
+          z-index: 10;
+          background-color: #FFF;
+          right: 0px;
+          margin-top: 2.6667vw;
+          text-align: right;
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+          border-radius: 1.0667vw;
+          & li{
+            font-size: 3vw;
+            padding: 3.0222vw 7.4667vw;
+            box-sizing: border-box;
+            color:#c7bdb8;
+            &:first-child{
+              border-radius: 1.0667vw 1.0667vw 0px 0px;
+            }
+            &:last-child{
+              border-radius: 0px 0px 1.0667vw 1.0667vw;
+            }
+            &.active{
+              background-color: #e6e1de;
+              color:#84685a;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+    }
   }
   & nav.gnb_wrap{
     background-color: #6a84c2;
