@@ -164,7 +164,7 @@
                 <img src="./image/pause.png" alt="slide-btn-pause" />
               </a>
               <a href="#;" class="start">
-                <img src="./image/" alt="" />
+                <img src="./image/play.png" alt="slide-btn-play" />
               </a>
             </li>
             <li class="num-btn swiper-pagination">
@@ -401,7 +401,7 @@
 
       <!-- 커밋확인 -->
     </div>
-    <script>
+    <!-- <script>
       var swiper = new Swiper(".mySwiper", {
         // slidesPerView: 1.265,
         slidesPerView: "1.81",
@@ -422,20 +422,101 @@
         },
 
         loop: true,
-        // autoplay: {
-        //   delay: 2000,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
         speed: 1000,
       });
       $(".start").on("click", function () {
         swiper.autoplay.start();
+        $(this).hide(); // Start 버튼 숨기기
+        $(".pause").show(); // Pause 버튼 보이기
+        $(this).replaceWith(`
+        <a href="#;" class="pause">
+            <img src="./image/pause.png" />
+        </a>
+        `);
+        // Autoplay 시작
+        swiper.autoplay.start();
+
+        // 새로 생성된 pause 버튼에 이벤트 연결
+        setPauseClickEvent();
         return false;
       });
       $(".pause").on("click", function () {
         swiper.autoplay.stop();
+        $(this).hide(); // Pause 버튼 숨기기
+        $(".start").show(); // Start 버튼 보이기
+        $(this).replaceWith(`
+            <a href="#;" class="start">
+                <img src="./image/play.png" />
+            </a>
+        `);
         return false;
       });
+
+      swiper.slideTo(index, speed);
+    </script> -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "1.81",
+        spaceBetween: 124,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+        },
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        speed: 1000,
+      });
+
+      // 이벤트 위임을 통해 동적으로 생성된 요소에 대해 클릭 이벤트를 적용
+      $(document).on("click", ".start", function () {
+        // Autoplay 시작
+        swiper.autoplay.start();
+
+        // Start 버튼 숨기고 Pause 버튼 보이기
+        $(this).hide();
+        $(".pause").show();
+
+        // Start 버튼을 Pause 버튼으로 교체
+        $(this).replaceWith(`
+          <a href="#;" class="pause">
+              <img src="./image/pause.png" />
+          </a>
+        `);
+
+        return false;
+      });
+
+      $(document).on("click", ".pause", function () {
+        // Autoplay 중지
+        swiper.autoplay.stop();
+
+        // Pause 버튼 숨기고 Start 버튼 보이기
+        $(this).hide();
+        $(".start").show();
+
+        // Pause 버튼을 Start 버튼으로 교체
+        $(this).replaceWith(`
+          <a href="#;" class="start">
+              <img src="./image/play.png" />
+          </a>
+        `);
+
+        return false;
+      });
+
+      // 특정 인덱스로 슬라이드 이동
       swiper.slideTo(index, speed);
     </script>
   </body>
