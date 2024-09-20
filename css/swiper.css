@@ -211,7 +211,7 @@ body {
   left: 39px !important;
 }
 .slide-btn img {
-  width: 100%;
+  /* width: 100%; */
 }
 .start {
   position: absolute;
