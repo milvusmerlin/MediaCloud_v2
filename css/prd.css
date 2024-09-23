@@ -16,13 +16,14 @@
   border: 1px solid #b2bdcb;
   border-radius: 3px;
   padding: 6px;
+  white-space: nowrap;
 }
 .container .prd_detail .prd_detail_top {
   padding-top: 56px;
   padding-bottom: 62px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 70px;
 }
 .container .prd_detail .prd_detail_top .left {
   display: flex;
