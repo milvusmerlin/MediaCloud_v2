@@ -16,7 +16,7 @@ var user = {
   userName: "사용자 A"
 };
 var giftBanner = document.querySelector(".prd_main_info_ad");
-userBtn.addEventListener("click", function (e) {
+userBtn.addEventListener("mouseenter", function (e) {
   if (userList.style.display === "none") {
     userList.style.display = "block";
   } else {

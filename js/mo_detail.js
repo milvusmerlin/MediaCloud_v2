@@ -13,7 +13,7 @@ const banner = document.querySelector(".prd_main_info_ad > a > img");
 const user = { userName: "사용자 A" }
 const giftBanner = document.querySelector(".prd_main_info_ad");
 
-userBtn.addEventListener("click", (e) => {
+userBtn.addEventListener("mouseenter", (e) => {
 
   if (userList.style.display === "none") {
     userList.style.display = "block";

@@ -13,7 +13,7 @@ var user = {
   userName: "사용자 A"
 };
 var giftBanner = document.querySelector(".contents_banner");
-userBtn.addEventListener("click", function (e) {
+userBtn.addEventListener("mouseenter", function (e) {
   var userStatus = userList.style.display;
 
   if (userStatus === "none") {

@@ -9,16 +9,14 @@ const banner = document.querySelector(".contents_banner > img");
 const userWrap = document.querySelector(".user_box > .user_box_inner");
 const userBtn = document.querySelector(".user_box > .user_box_inner > img");
 const userList = document.querySelector(".user_list");
+
 const user = {
   userName: "사용자 A"
 };
 
 const giftBanner = document.querySelector(".contents_banner");
 
-
-
-
-userBtn.addEventListener("click", (e) => {
+userBtn.addEventListener("mouseenter", (e) => {
 
   const userStatus = userList.style.display;
 
