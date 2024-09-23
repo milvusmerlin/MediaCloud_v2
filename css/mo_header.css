@@ -34,6 +34,7 @@ div.header{
       width:7.6444vw;
       aspect-ratio: 1;
       position: relative;
+      cursor: pointer;
       & div.user_box_inner{
         & img{
           width:100%;
@@ -79,6 +80,7 @@ div.header{
       width:7.6444vw;
       aspect-ratio: 1;
       position: relative;
+      cursor: pointer;
       & div.prd_user_box_inner{
         & img{
           width:100%;
