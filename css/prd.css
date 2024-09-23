@@ -1,7 +1,7 @@
 .container .prd_keyword {
-  position: absolute;
-  left: 1454px;
-  top: 191px;
+  position: relative;
+  left: 442px;
+  top: -25px;
 }
 .container .prd_keyword ul {
   display: flex;
@@ -19,7 +19,7 @@
   white-space: nowrap;
 }
 .container .prd_detail .prd_detail_top {
-  padding-top: 56px;
+  padding-top: 30px;
   padding-bottom: 62px;
   display: flex;
   flex-direction: row;
@@ -275,7 +275,9 @@
   background-color: #6a84c2;
 }
 .prd_inner {
-  margin: 0 414px 0 409px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .info_txt {
   font-size: 13px;
