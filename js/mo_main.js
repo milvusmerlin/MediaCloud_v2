@@ -14,9 +14,17 @@ const user = {
   userName: "사용자 A"
 };
 
+let clickEvent = (function () {
+  if ('ontouchstart' in document.documentElement === true) {
+    return 'touchstart';
+  } else {
+    return 'click';
+  }
+})();
+
 const giftBanner = document.querySelector(".contents_banner");
 
-userBtn.addEventListener("mouseenter", (e) => {
+userBtn.addEventListener(clickEvent, (e) => {
 
   const userStatus = userList.style.display;
 
